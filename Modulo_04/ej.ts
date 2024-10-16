@@ -1,0 +1,1 @@
+let addThreeNumbers = (x: number, y: number, z: number): number => x + y + z;
