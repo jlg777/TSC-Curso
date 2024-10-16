@@ -1,15 +1,9 @@
-interface Employee {
-    firstName: string;
-    lastName: string;
-    fullName(): string;
+interface Loan {
+    principal : number,
+    interestRate: number
 }
 
-let employee: Employee = {
-    firstName : "Emil",
-    lastName: "Andersson",
-    fullName(): string {
-        return this.firstName + " " + this.lastName;
-    }
+interface ConventionalLoan extends Loan {
+    months: number
 }
 
-employee.firstName = '10';  //* Error - Type 'number' is not assignable to type 'string'
